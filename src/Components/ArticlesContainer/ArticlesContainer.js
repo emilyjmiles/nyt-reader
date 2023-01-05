@@ -7,6 +7,7 @@ const ArticlesContainer = ({ articles }) => {
   const cards = articles.map(article => {
     return (
       <ArticleCard
+        key={ article.published_date }
         image={ article.multimedia[1].url }
         title={ article.title }
         summary={ article.abstract }

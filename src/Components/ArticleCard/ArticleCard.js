@@ -1,13 +1,14 @@
+import { Link } from 'react-router-dom';
 import './ArticleCard.css';
 
-const ArticleCard = ({ image, title, date, summary, author }) => {
+const ArticleCard = ({ image, title, summary, author }) => {
   return (
-    <section className='article-card'>
+    <Link to={ title } className='article-card'>
       <img src={ image } alt={ title } className='article-image' />
       <h1>{ title }</h1>
       <p>{ summary }</p>
       <h3>{ author }</h3>
-    </section>
+    </Link>
   );
 };
 
