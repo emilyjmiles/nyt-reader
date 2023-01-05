@@ -13,8 +13,7 @@ const ArticlesContainer = ({ articles }) => {
         key={ article.published_date }
         image={ !article.multimedia ? nytSymbol : article.multimedia[1].url }
         title={ article.title }
-        summary={ article.abstract }
-        author={ article.byline }
+        date={ article.published_date }
       />
     );
   });
