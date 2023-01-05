@@ -1,0 +1,11 @@
+.header-section {
+  display: flex;
+}
+.logo {
+  width: 25%;
+}
+
+.reader {
+  margin-left: 1%;
+  /* font-size: 2vw; */
+}
