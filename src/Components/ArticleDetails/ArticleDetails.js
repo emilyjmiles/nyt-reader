@@ -18,7 +18,7 @@ const ArticleDetails = ({ articleData }) => {
   });
 
   const formatDate = `${removeZeros[0]} ${months[parseInt(removeZeros[1])]} ${removeZeros[2]}`;
-  console.log(formatDate);
+
   // 'Is Matcha Good for You?' and 'How Can I Stop Snoring' are not viewing properly
 
   return (
