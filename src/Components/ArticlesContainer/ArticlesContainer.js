@@ -2,8 +2,6 @@ import './ArticlesContainer.css';
 import ArticleCard from '../ArticleCard/ArticleCard';
 
 const ArticlesContainer = ({ articles }) => {
-  console.log(articles);
-
   const cards = articles.map(article => {
     return (
       <ArticleCard
