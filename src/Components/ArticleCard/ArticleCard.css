@@ -13,3 +13,14 @@
   width: 15vw;
   height: auto;
 }
+
+.article-snippet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 17.5vh;
+}
+
+.title {
+  font-size: 1.25rem;
+}
