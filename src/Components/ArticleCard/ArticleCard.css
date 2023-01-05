@@ -1,0 +1,13 @@
+.article-card {
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+  padding: 1%;
+  margin: 1%;
+  border: 2px solid black
+}
+
+.article-image {
+  width: 15vw;
+  height: auto;
+}
