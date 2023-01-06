@@ -1,6 +1,6 @@
 import './SearchForm.css';
 
-const SearchForm = ({ articles }) => {
+const SearchForm = ({ articles, handleSearch, handleSort, searchValue, sortValue, clearInputs }) => {
   const getSections = articles.reduce((list, article) => {
     if (!list.includes(article.section)) {
       list.push(article.section);
@@ -12,27 +12,42 @@ const SearchForm = ({ articles }) => {
   }, []);
 
   const getInputs = getSections.map(section => {
-    return <option key={ section } value={ section }>{ section }</option>;
+    return (
+      <option
+        key={ section }
+        value={ section }>
+        { section }
+      </option>
+    );
   });
+
+  console.log(sortValue);
+  console.log(searchValue);
 
   return (
     <form className='search-form'>
-      <label>Sort Articles by Content:
-        <select
-          name='section'>
-          <option defaultValue='choose article content'>choose article content</option>
-          { getInputs }
-        </select>
-      </label>
-      <label>Search Articles by Title:
-        <input
-          type='text'
-          placeholder='title'
-          value='title'
-          className='title-input'
-        />
-      </label>
-      <button>Submit</button>
+      <label>Search Articles by Content: </label>
+      <select
+        name='section'
+        onChange={ handleSort }>
+        <option
+          defaultValue=''>
+          choose article content
+        </option>
+        { getInputs }
+      </select>
+      <label>Search Articles by Title: </label>
+      <input
+        type='text'
+        placeholder='article title'
+        value={ searchValue }
+        className='title-input'
+        onChange={ handleSearch }
+      />
+      <button
+        onClick={ (event) => clearInputs(event) }>
+        Clear Search
+      </button>
     </form>
   );
 };

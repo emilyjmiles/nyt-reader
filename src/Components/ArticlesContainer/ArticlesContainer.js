@@ -1,6 +1,5 @@
 import './ArticlesContainer.css';
 import ArticleCard from '../ArticleCard/ArticleCard';
-import SearchForm from '../SearchForm/SearchForm';
 import nytSymbol from '../../assets/Symbol-New-York-Times.webp';
 
 const ArticlesContainer = ({ articles }) => {
@@ -21,8 +20,6 @@ const ArticlesContainer = ({ articles }) => {
 
   return (
     <section className='articles-container'>
-      <h1 className='top-stories'>Today's Top Stories</h1>
-      <SearchForm articles={ articles } />
       <div className='card-container'>
         { cards }
       </div>
