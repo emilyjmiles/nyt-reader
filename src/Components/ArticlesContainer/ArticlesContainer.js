@@ -10,7 +10,7 @@ const ArticlesContainer = ({ articles }) => {
   const cards = articles.map(article => {
     return (
       <ArticleCard
-        key={ article.published_date }
+        key={ article.uri }
         image={ !article.multimedia ? nytSymbol : article.multimedia[1].url }
         title={ article.title }
         date={ article.published_date }
@@ -20,7 +20,10 @@ const ArticlesContainer = ({ articles }) => {
 
   return (
     <section className='articles-container'>
-      { cards }
+      <h1 className='top-stories'>Today's Top Stories</h1>
+      <div className='card-container'>
+        { cards }
+      </div>
     </section>
   );
 };
