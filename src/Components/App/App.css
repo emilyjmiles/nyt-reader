@@ -1,5 +1,10 @@
 .main-page {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+}
+
+.top-stories {
+  font-size: 4rem;
+  max-width: 100%;
 }
