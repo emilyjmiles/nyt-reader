@@ -1,26 +1,35 @@
 .article-card {
   display: flex;
   flex-direction: column;
-  width: 15vw;
-  padding: 1%;
-  margin: 1%;
+  align-items: center;
+  text-align: center;
+  /* flex-basis: %; */
+  
+  width: 13.5vw;
+  max-height: 35vh;
+  padding: 0.5%;
+  margin: 0.5%;
   border: 2px solid #000000;
   text-decoration: none;
   color: #000000
 }
 
 .article-image {
-  width: 15vw;
-  height: auto;
+  max-width: 100%;
+  max-height: 50%;
 }
 
 .article-snippet {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 17.5vh;
+  height: 50%;
 }
 
 .title {
-  font-size: 1.25rem;
+  font-size: 1.75rem;
+}
+
+p {
+  font-size: 1.5rem;
 }

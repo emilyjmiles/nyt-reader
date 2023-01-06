@@ -1,11 +1,8 @@
 .header-section {
   display: flex;
-}
-.logo {
-  width: 25%;
+  justify-content: center;
 }
 
-.reader {
-  margin-left: 1%;
-  /* font-size: 2vw; */
+.logo {
+  max-width: 100%;
 }
