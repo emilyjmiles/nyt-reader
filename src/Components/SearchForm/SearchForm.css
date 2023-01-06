@@ -1,0 +1,15 @@
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+label {
+  font-size: 1.75rem;
+  padding: 0.5%
+}
+
+.title-input {
+  width: 33vw;
+}
