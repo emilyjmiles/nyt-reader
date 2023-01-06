@@ -16,7 +16,7 @@ const ArticleDetails = ({ articleData }) => {
     }
     return value;
   });
-  const formatDate = `${removeZeros[0]} ${months[parseInt(removeZeros[1])]} ${removeZeros[2]}`;
+  const formatDate = `${removeZeros[0]} ${months[parseInt(removeZeros[1] - 1)]} ${removeZeros[2]}`;
 
   // 'Is Matcha Good for You?' and 'How Can I Stop Snoring' are not viewing properly
 
@@ -30,7 +30,7 @@ const ArticleDetails = ({ articleData }) => {
           { articleData.subsection && <p className='section-name'>{ articleData.subsection }</p> }
         </div>
         <p></p>
-        <h1>{ articleData.title }</h1>
+        <h1 className='details-title'>{ articleData.title }</h1>
         <p>{ articleData.byline }</p>
         <p>First Published: { formatDate }</p>
         <p>{ articleData.abstract }</p>
