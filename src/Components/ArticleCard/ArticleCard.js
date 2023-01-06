@@ -14,7 +14,7 @@ const ArticleCard = ({ image, title, date }) => {
   const formatDate = `${removeZeros[0]} ${months[parseInt(removeZeros[1] - 1)]} ${removeZeros[2]}`;
 
   return (
-    <Link to={ title } className='article-card'>
+    <Link to={ date } className='article-card'>
       <img src={ image } alt={ title } className='article-image' />
       <div className='article-snippet'>
         <h2 className='title'>{ title }</h2>
