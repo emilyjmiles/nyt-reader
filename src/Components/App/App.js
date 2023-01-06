@@ -24,9 +24,9 @@ const App = () => {
           render={ () => <ArticlesContainer articles={ articles } /> }
         />
         <Route
-          path='/:title'
+          path='/:date'
           render={ ({ match }) => {
-            const findArticle = articles.find(article => article.title === match.params.title);
+            const findArticle = articles.find(article => article.published_date === match.params.date);
             return <ArticleDetails articleData={ findArticle } />;
           } }
         />

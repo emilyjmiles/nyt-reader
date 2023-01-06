@@ -2,17 +2,18 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .details-image {
-  width: 45vw;
+  width: 40vw;
   height: auto;
   padding: 1%;
   margin: 1%;
 }
 
 .details-info {
-  width: 45vw;
+  width: 50vw;
   height: auto;
   padding: 1%;
   margin: 1%;
