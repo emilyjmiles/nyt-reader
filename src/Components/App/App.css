@@ -2,9 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .top-stories {
-  font-size: 4rem;
+  font-size: 3rem;
   max-width: 100%;
+  margin: 0.5%;
 }
