@@ -1,0 +1,298 @@
+{
+  "results": [
+    {
+      "section": "us",
+      "subsection": "",
+      "title": "Videos, Photos and Maps of the Damage From the California Storms",
+      "abstract": "A catastrophic string of storms continued to pummel California on Tuesday. Here’s what it looked like.",
+      "url": "https://www.nytimes.com/interactive/2023/01/10/us/california-storms-video-photos-maps.html",
+      "uri": "nyt://interactive/ef66cc0d-38e4-5004-8716-7962026991ec",
+      "byline": "By Adeel Hassan, Christina Kelso, Scott Reinhard, Stephen Reiss and Josh Williams",
+      "item_type": "Interactive",
+      "updated_date": "2023-01-10T15:07:31-05:00",
+      "created_date": "2023-01-10T13:07:55-05:00",
+      "published_date": "2023-01-10T13:07:55-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+          "Weather",
+          "Rain"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [
+          "California"
+      ],
+      "multimedia": [
+          {
+              "url": "https://static01.nyt.com/images/2023/01/10/autossell/shaver-lake-cover/shaver-lake-cover-superJumbo.png",
+              "format": "Super Jumbo",
+              "height": 1365,
+              "width": 2048,
+              "type": "image",
+              "subtype": "photo",
+              "caption": "",
+              "copyright": ""
+          },
+          {
+              "url": "https://static01.nyt.com/images/2023/01/10/autossell/shaver-lake-cover/shaver-lake-cover-threeByTwoSmallAt2X.png",
+              "format": "threeByTwoSmallAt2X",
+              "height": 400,
+              "width": 600,
+              "type": "image",
+              "subtype": "photo",
+              "caption": "",
+              "copyright": ""
+          },
+          {
+              "url": "https://static01.nyt.com/images/2023/01/10/autossell/shaver-lake-cover/shaver-lake-cover-thumbLarge.png",
+              "format": "Large Thumbnail",
+              "height": 150,
+              "width": 150,
+              "type": "image",
+              "subtype": "photo",
+              "caption": "",
+              "copyright": ""
+          }
+      ],
+      "short_url": "https://nyti.ms/3jVEvD6"
+    },
+    {
+      "section": "us",
+      "subsection": "",
+      "title": "California storm damage could top $1 billion.",
+      "abstract": "Major weather disasters have been striking the United States much more often in recent years as the global climate changes.",
+      "url": "https://www.nytimes.com/2023/01/10/us/california-storm-damage.html",
+      "uri": "nyt://article/49ebbd5f-e58d-52b3-9050-fbf70e04dff1",
+      "byline": "By Christopher Flavelle",
+      "item_type": "Article",
+      "updated_date": "2023-01-10T12:58:28-05:00",
+      "created_date": "2023-01-10T11:25:34-05:00",
+      "published_date": "2023-01-10T11:25:34-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+          "Weather",
+          "Disasters and Emergencies",
+          "Floods"
+      ],
+      "org_facet": [
+          "National Oceanic and Atmospheric Administration"
+      ],
+      "per_facet": [],
+      "geo_facet": [
+          "California"
+      ],
+      "multimedia": [
+          {
+              "url": "https://static01.nyt.com/images/2023/01/10/multimedia/10calif-storms-billion-dollar-disasters-fqhg/10calif-storms-billion-dollar-disasters-fqhg-superJumbo.jpg",
+              "format": "Super Jumbo",
+              "height": 1365,
+              "width": 2048,
+              "type": "image",
+              "subtype": "photo",
+              "caption": "A flooded underpass in Oakland, Calif., last week.",
+              "copyright": "Erin Schaff/The New York Times"
+          },
+          {
+              "url": "https://static01.nyt.com/images/2023/01/10/multimedia/10calif-storms-billion-dollar-disasters-fqhg/10calif-storms-billion-dollar-disasters-fqhg-threeByTwoSmallAt2X.jpg",
+              "format": "threeByTwoSmallAt2X",
+              "height": 400,
+              "width": 600,
+              "type": "image",
+              "subtype": "photo",
+              "caption": "A flooded underpass in Oakland, Calif., last week.",
+              "copyright": "Erin Schaff/The New York Times"
+          },
+          {
+              "url": "https://static01.nyt.com/images/2023/01/10/multimedia/10calif-storms-billion-dollar-disasters-fqhg/10calif-storms-billion-dollar-disasters-fqhg-thumbLarge.jpg",
+              "format": "Large Thumbnail",
+              "height": 150,
+              "width": 150,
+              "type": "image",
+              "subtype": "photo",
+              "caption": "A flooded underpass in Oakland, Calif., last week.",
+              "copyright": "Erin Schaff/The New York Times"
+          }
+      ],
+      "short_url": "https://nyti.ms/3Xf3ijO"
+    },
+    {
+      "section": "us",
+      "subsection": "",
+      "title": "A Day-by-Day Look at California's Weather",
+      "abstract": "The state, already inundated with water, could see rain and high winds for days.",
+      "url": "https://www.nytimes.com/article/california-weather-forecast-rain-wind.html",
+      "uri": "nyt://article/42fb011f-a082-52ae-a57e-a6f5ccab58aa",
+      "byline": "By Judson Jones",
+      "item_type": "Article",
+      "updated_date": "2023-01-10T13:36:13-05:00",
+      "created_date": "2023-01-05T15:19:31-05:00",
+      "published_date": "2023-01-05T15:19:31-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+          "Rain",
+          "Weather",
+          "Wind",
+          "Floods"
+      ],
+      "org_facet": [
+          "National Weather Service"
+      ],
+      "per_facet": [],
+      "geo_facet": [
+          "California",
+          "Sacramento Valley (Calif)",
+          "Los Angeles (Calif)",
+          "Sacramento (Calif)",
+          "San Francisco (Calif)"
+      ],
+      "multimedia": [
+          {
+              "url": "https://static01.nyt.com/images/2023/01/05/multimedia/g-0-promo/g-0-promo-superJumbo-v2.jpg",
+              "format": "Super Jumbo",
+              "height": 1333,
+              "width": 2000,
+              "type": "image",
+              "subtype": "photo",
+              "caption": "",
+              "copyright": ""
+          },
+          {
+              "url": "https://static01.nyt.com/images/2023/01/05/multimedia/g-0-promo/g-0-promo-threeByTwoSmallAt2X-v3.jpg",
+              "format": "threeByTwoSmallAt2X",
+              "height": 400,
+              "width": 600,
+              "type": "image",
+              "subtype": "photo",
+              "caption": "",
+              "copyright": ""
+          },
+          {
+              "url": "https://static01.nyt.com/images/2023/01/05/multimedia/g-0-promo/g-0-promo-thumbLarge-v2.jpg",
+              "format": "Large Thumbnail",
+              "height": 150,
+              "width": 150,
+              "type": "image",
+              "subtype": "photo",
+              "caption": "",
+              "copyright": ""
+          }
+      ],
+      "short_url": "https://nyti.ms/3id45Dl"
+    },
+    {
+      "section": "world",
+      "subsection": "europe",
+      "title": "Russia posts a $47 billion budget deficit for 2022, its second highest in the post-Soviet era.",
+      "abstract": "The budget gap reached 3.3 trillion rubles, or 2.3 percent of the size of the Russian economy, according to the country’s finance minister.",
+      "url": "https://www.nytimes.com/2023/01/10/world/europe/russia-deficit-economy.html",
+      "uri": "nyt://article/59f8468f-4f21-5d68-8390-4c83fa415fd3",
+      "byline": "By Ivan Nechepurenko",
+      "item_type": "Article",
+      "updated_date": "2023-01-10T15:18:16-05:00",
+      "created_date": "2023-01-10T15:17:45-05:00",
+      "published_date": "2023-01-10T15:17:45-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "multimedia": [
+          {
+              "url": "https://static01.nyt.com/images/2023/01/10/multimedia/10ukraine-briefing-russia-deficit01-vbtw/10ukraine-briefing-russia-deficit01-vbtw-superJumbo.jpg",
+              "format": "Super Jumbo",
+              "height": 1366,
+              "width": 2048,
+              "type": "image",
+              "subtype": "photo",
+              "caption": "Red Square in Moscow last October. Russia’s revenues grew last year, but they couldn’t keep pace with spending. ",
+              "copyright": "Nanna Heitmann for The New York Times"
+          },
+          {
+              "url": "https://static01.nyt.com/images/2023/01/10/multimedia/10ukraine-briefing-russia-deficit01-vbtw/10ukraine-briefing-russia-deficit01-vbtw-threeByTwoSmallAt2X.jpg",
+              "format": "threeByTwoSmallAt2X",
+              "height": 400,
+              "width": 600,
+              "type": "image",
+              "subtype": "photo",
+              "caption": "Red Square in Moscow last October. Russia’s revenues grew last year, but they couldn’t keep pace with spending. ",
+              "copyright": "Nanna Heitmann for The New York Times"
+          },
+          {
+              "url": "https://static01.nyt.com/images/2023/01/10/multimedia/10ukraine-briefing-russia-deficit01-vbtw/10ukraine-briefing-russia-deficit01-vbtw-thumbLarge.jpg",
+              "format": "Large Thumbnail",
+              "height": 150,
+              "width": 150,
+              "type": "image",
+              "subtype": "photo",
+              "caption": "Red Square in Moscow last October. Russia’s revenues grew last year, but they couldn’t keep pace with spending. ",
+              "copyright": "Nanna Heitmann for The New York Times"
+          }
+      ],
+      "short_url": "https://nyti.ms/3k14061"
+    },
+    {
+      "section": "us",
+      "subsection": "politics",
+      "title": "Biden Lawyers Found Classified Material at His Former Office",
+      "abstract": "The White House said it was cooperating as the Justice Department scrutinizes the matter.",
+      "url": "https://www.nytimes.com/2023/01/09/us/politics/biden-classified-documents.html",
+      "uri": "nyt://article/4e862623-386c-5f51-926f-5dd311c8b26f",
+      "byline": "By Peter Baker, Charlie Savage, Glenn Thrush and Adam Goldman",
+      "item_type": "Article",
+      "updated_date": "2023-01-10T11:31:55-05:00",
+      "created_date": "2023-01-09T19:03:46-05:00",
+      "published_date": "2023-01-09T19:03:46-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+          "United States Politics and Government",
+          "Classified Information and State Secrets"
+      ],
+      "org_facet": [
+          "Justice Department",
+          "National Archives and Records Administration"
+      ],
+      "per_facet": [
+          "Biden, Joseph R Jr"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+          {
+              "url": "https://static01.nyt.com/images/2023/01/09/multimedia/09dc-biden-docs-photo-1-b19e/09dc-biden-docs-photo-1-b19e-superJumbo.jpg",
+              "format": "Super Jumbo",
+              "height": 1366,
+              "width": 2048,
+              "type": "image",
+              "subtype": "photo",
+              "caption": "“A small number” of classified documents were discovered in President Biden’s former office at a Washington think tank, the White House said.",
+              "copyright": "Pete Marovich for The New York Times"
+          },
+          {
+              "url": "https://static01.nyt.com/images/2023/01/09/multimedia/09dc-biden-docs-photo-1-b19e/09dc-biden-docs-photo-1-b19e-threeByTwoSmallAt2X-v4.jpg",
+              "format": "threeByTwoSmallAt2X",
+              "height": 400,
+              "width": 600,
+              "type": "image",
+              "subtype": "photo",
+              "caption": "“A small number” of classified documents were discovered in President Biden’s former office at a Washington think tank, the White House said.",
+              "copyright": "Pete Marovich for The New York Times"
+          },
+          {
+              "url": "https://static01.nyt.com/images/2023/01/09/multimedia/09dc-biden-docs-photo-1-b19e/09dc-biden-docs-photo-1-b19e-thumbLarge.jpg",
+              "format": "Large Thumbnail",
+              "height": 150,
+              "width": 150,
+              "type": "image",
+              "subtype": "photo",
+              "caption": "“A small number” of classified documents were discovered in President Biden’s former office at a Washington think tank, the White House said.",
+              "copyright": "Pete Marovich for The New York Times"
+          }
+      ],
+      "short_url": "https://nyti.ms/3CBf0h7"
+    }
+  ]
+}
