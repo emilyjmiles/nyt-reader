@@ -36,7 +36,7 @@ const ArticleDetails = ({ articleData }) => {
   });
 
   return (
-    <section className='details-view'>
+    <section className='details-view' data-cy='details-view'>
       <div className='image-section'>
         <img
           src={ !articleData.multimedia ? nytSymbol : articleData.multimedia[1].url }

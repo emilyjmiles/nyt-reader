@@ -19,7 +19,7 @@ const App = () => {
   }, []);
 
   const handleSearch = (event) => {
-    const search = event.target.value;
+    const search = event.target.value.toLowerCase();
     setSearchValue(search);
     setSortValue(null);
   };
@@ -62,12 +62,12 @@ const App = () => {
   };
 
   return (
-    <main>
+    <main className='main-page' data-cy='main-page'>
       <Header />
       <Switch>
         <Route exact path='/'>
-          <section className='main-page'>
-            <h1 className='top-stories'>Today's Top Stories</h1>
+          <section className='main-page' data-cy='main-route'>
+            <h1 className='top-stories' data-cy='top-stories'>Today's Top Stories</h1>
             <SearchForm
               articles={ articlesWithIds }
               searchValue={ searchValue }
