@@ -21,34 +21,40 @@ const SearchForm = ({ articles, handleSearch, handleSort, searchValue, sortValue
     );
   });
 
-  console.log(sortValue);
-  console.log(searchValue);
-
   return (
-    <form className='search-form'>
-      <label>Search Articles by Content: </label>
-      <select
-        name='section'
-        onChange={ handleSort }>
-        <option
-          defaultValue=''>
-          choose article content
-        </option>
-        { getInputs }
-      </select>
-      <label>Search Articles by Title: </label>
-      <input
-        type='text'
-        placeholder='article title'
-        value={ searchValue }
-        className='title-input'
-        onChange={ handleSearch }
-      />
+    <section className='search-section'>
+      <form className='search-form'>
+        <div className='input-type sort-options'>
+          <label>Search Articles by Section: </label>
+          <select
+            value={ !sortValue ? '' : sortValue }
+            className='section-input'
+            onChange={ handleSort }>
+            { sortValue === null && <option
+              value=''
+              disabled>
+              select content type
+            </option> }
+            { getInputs }
+          </select>
+        </div>
+        <div className='input-type title-search'>
+          <label>Search Articles by Title: </label>
+          <input
+            type='text'
+            placeholder='article title'
+            value={ searchValue }
+            className='title-input'
+            onChange={ handleSearch }
+          />
+        </div>
+      </form>
       <button
+        className='clear-button'
         onClick={ (event) => clearInputs(event) }>
         Clear Search
       </button>
-    </form>
+    </section>
   );
 };
 
