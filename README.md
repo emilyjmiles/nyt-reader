@@ -1,6 +1,7 @@
 <a name="readme-top"></a>
 
-![nyt-reader-logo](https://user-images.githubusercontent.com/103063934/211656618-3afdfb2e-f58e-414d-a85d-3f6382337245.png)
+![nyt-reader-gh-logo](https://user-images.githubusercontent.com/103063934/211657236-96fda30f-3756-40e7-99e2-8de71ee89def.png)
+
 
 ## Table of Contents
 
