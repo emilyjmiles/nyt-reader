@@ -20,7 +20,7 @@
 
 ## About The Project
 
-[Click here to explore the conFURm app!](
+[Click here to explore the The New York Times Reader app!]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
