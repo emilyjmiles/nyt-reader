@@ -30,7 +30,14 @@ const App = () => {
     setSearchValue('');
   };
 
-  const sortedArticles = articles.reduce((list, article) => {
+  const articlesWithIds = articles.map((article, index) => {
+    if (!article.id) {
+      article.id = (index + 1).toString();
+    }
+    return article;
+  });
+
+  const sortedArticles = articlesWithIds.reduce((list, article) => {
     const matchSection = article.section === sortValue;
     const matchSubsection = article.subsection === sortValue;
 
@@ -40,21 +47,13 @@ const App = () => {
     return list;
   }, []);
 
-
-  const searchResults = articles.reduce((list, article) => {
+  const searchResults = articlesWithIds.reduce((list, article) => {
     const changeTitleCase = article.title.toLowerCase();
     if (changeTitleCase.includes(searchValue) && !list.includes(article)) {
       list.push(article);
     }
     return list;
   }, []);
-
-  const articlesWithIds = articles.map((article, index) => {
-    if (!article.id) {
-      article.id = (index + 1).toString();
-    }
-    return article;
-  });
 
   const clearInputs = (event) => {
     event.preventDefault();
