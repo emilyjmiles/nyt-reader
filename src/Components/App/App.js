@@ -10,10 +10,8 @@ import SearchForm from '../SearchForm/SearchForm';
 
 const App = () => {
   const [articles, setArticles] = useState([]);
-  const [sortValue, setSortValue] = useState('');
+  const [sortValue, setSortValue] = useState(null);
   const [searchValue, setSearchValue] = useState('');
-  const [articlesBySection, setArticlesBySection] = useState([]);
-  const [articlesSearch, setArticlesSearch] = useState([]);
 
   useEffect(() => {
     fetchAllData('home')
@@ -21,25 +19,45 @@ const App = () => {
   }, []);
 
   const handleSearch = (event) => {
-    const search = event.target.value.toLowerCase();
+    const search = event.target.value;
     setSearchValue(search);
+    setSortValue(null);
   };
 
   const handleSort = (event) => {
-    const section = event.target.value.toLowerCase();
+    const section = event.target.value;
     setSortValue(section);
+    setSearchValue('');
   };
 
-  // articles.filter(article => {
-  //   if (article.section === sortValue || article.subsection === sortValue) {
-  //     setArticlesBySection([...articlesBySection, article]);
-  //   }
-  //   return articlesBySection;
-  // });
+  const articlesWithIds = articles.map((article, index) => {
+    if (!article.id) {
+      article.id = (index + 1).toString();
+    }
+    return article;
+  });
+
+  const sortedArticles = articlesWithIds.reduce((list, article) => {
+    const matchSection = article.section === sortValue;
+    const matchSubsection = article.subsection === sortValue;
+
+    if ((matchSection || matchSubsection) && !list.includes(article)) {
+      list.push(article);
+    }
+    return list;
+  }, []);
+
+  const searchResults = articlesWithIds.reduce((list, article) => {
+    const changeTitleCase = article.title.toLowerCase();
+    if (changeTitleCase.includes(searchValue) && !list.includes(article)) {
+      list.push(article);
+    }
+    return list;
+  }, []);
 
   const clearInputs = (event) => {
     event.preventDefault();
-    setSortValue('');
+    setSortValue(null);
     setSearchValue('');
   };
 
@@ -51,20 +69,24 @@ const App = () => {
           <section className='main-page'>
             <h1 className='top-stories'>Today's Top Stories</h1>
             <SearchForm
-              articles={ articles }
+              articles={ articlesWithIds }
               searchValue={ searchValue }
               sortValue={ sortValue }
               handleSearch={ handleSearch }
               handleSort={ handleSort }
               clearInputs={ clearInputs }
             />
-            <ArticlesContainer articles={ articles } />
+            <ArticlesContainer
+              articles={ articlesWithIds }
+              sortedArticles={ sortedArticles }
+              searchResults={ searchResults }
+            />
           </section>
         </Route>
         <Route
-          path='/:date'
+          path='/:id'
           render={ ({ match }) => {
-            const findArticle = articles.find(article => article.published_date === match.params.date);
+            const findArticle = articlesWithIds.find(article => article.id === match.params.id);
             return <ArticleDetails articleData={ findArticle } />;
           } }
         />

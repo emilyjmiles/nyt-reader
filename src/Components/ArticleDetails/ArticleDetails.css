@@ -2,32 +2,43 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex: 1 1 600px;
   width: 100%;
 }
 
-.details-image {
-  width: 40vw;
-  height: auto;
+.image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 45vw;
+  width: min-content;
+  max-width: 100%;
   padding: 1%;
   margin: 1%;
+}
+
+.details-image {
+  width: 100%;
+  height: auto;
 }
 
 .details-info {
-  width: 50vw;
-  height: auto;
+  width: 45vw;
+  max-width: 100%;
   padding: 1%;
   margin: 1%;
 }
 
-.sections {
+.word-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .details-title {
   font-size: 2.25rem;
 }
 
-.section-name {
+.words {
   text-align: center;
   margin: 0.25%;
   padding: 1%;

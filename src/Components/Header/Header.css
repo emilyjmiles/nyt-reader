@@ -1,9 +1,10 @@
 .header-section {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .logo {
   max-width: 100%;
-  /* position: fixed; */
+  height: auto;
 }
