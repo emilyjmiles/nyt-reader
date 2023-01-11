@@ -27,15 +27,19 @@ const ArticlesContainer = ({ articles, sortedArticles, searchResults }) => {
     });
   };
 
-  console.log(articles);
-
   return (
     <section className='articles-container' data-cy='articles-container'>
       <div className='card-container' data-cy='card-container'>
         { displayAllArticles && getArticleCards(articles) }
         { displaySearchResults && getArticleCards(searchResults) }
         { sortedArticles.length > 0 && getArticleCards(sortedArticles) }
-        { noResultsFound && <h1 className='search-no-results' data-cy='search-no-results'>No results found. Please try using a different search term.</h1> }
+        { noResultsFound &&
+          <h1
+            className='search-no-results'
+            data-cy='search-no-results'>
+            No results found. Please try using a different search term.
+          </h1>
+        }
       </div>
     </section>
   );
