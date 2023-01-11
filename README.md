@@ -9,7 +9,6 @@
 - [Project Spec](#project-spec)
 - [Technologies](#technologies)
 - [Getting Started](#getting-started)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Testing](#testing)
 - [Contact](#contact)
