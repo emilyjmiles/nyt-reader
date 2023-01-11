@@ -38,10 +38,8 @@ The New York Times Reader is an application built in week 22 of [Turing School o
 
 ### Personal Goals
 
-- Utilize React and React Router
-- Test the UI/UX using Cypress
+- Thoroughly test the UI/UX using Cypress
 - Utilize Lighthouse and Wave for accessibility
-- Make network requests to API endpoints to retrieve and manipulate data
 - Implement error handling
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -87,6 +85,7 @@ Future Iterations:
 
 - [ ] Add footer
 - [ ] Refactor code for dryness
+- [ ] Implement TDD to further test code
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
