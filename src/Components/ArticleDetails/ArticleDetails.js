@@ -32,7 +32,14 @@ const ArticleDetails = ({ articleData }) => {
   const keywords = articleData.des_facet.concat(articleData.geo_facet, articleData.org_facet, articleData.per_facet);
 
   const getKeywords = keywords.map((word, index) => {
-    return <p key={ index } className='words single-keyword'>{ word }</p>;
+    return (
+      <p
+        key={ index }
+        className='words single-keyword'
+        data-cy='single-keyword'>
+        { word }
+      </p>
+    );
   });
 
   return (
@@ -42,6 +49,7 @@ const ArticleDetails = ({ articleData }) => {
           src={ !articleData.multimedia ? nytSymbol : articleData.multimedia[1].url }
           alt={ articleData.title }
           className='details-image'
+          data-cy='details-image'
           width={ articleData.multimedia[1].width }
           height={ articleData.multimedia[1].height }
         />
@@ -49,24 +57,24 @@ const ArticleDetails = ({ articleData }) => {
           && <p className='image-caption'><b>Photo Caption:</b> { articleData.multimedia[1].caption }</p>
         }
       </div>
-      <div className='details-info'>
+      <div className='details-info' data-cy='details-info'>
         { articleData.subsection ? <p><b>Sections</b></p> : <p><b>Section</b></p> }
-        <div className='word-container'>
+        <div className='word-container' data-cy='section-container'>
           <p className='words section-name'>{ articleData.section }</p>
           { articleData.subsection && <p className='words section-name'>{ articleData.subsection }</p> }
         </div>
-        <h1 className='details-title'>{ articleData.title }</h1>
-        <p>{ articleData.byline }</p>
-        <p><b>First Published:</b> { formatDates(articleData.published_date) }</p>
-        <p><b>Last Updated:</b> { formatDates(articleData.updated_date) }</p>
-        <p><b>Article Abstract:</b> { articleData.abstract }</p>
+        <h1 className='details-title' data-cy='details-title'>{ articleData.title }</h1>
+        <p data-cy='details-byline'>{ articleData.byline }</p>
+        <p data-cy='details-published'><b>First Published:</b> { formatDates(articleData.published_date) }</p>
+        <p data-cy='details-updated'><b>Last Updated:</b> { formatDates(articleData.updated_date) }</p>
+        <p data-cy='details-abstract'><b>Article Abstract:</b> { articleData.abstract }</p>
         <h2>Article Content Keywords</h2>
-        <div className='word-container'>
-          { articleData.subsection && getKeywords }
+        <div className='word-container' data-cy='keywords-container'>
+          { getKeywords }
         </div>
-        <a href={ articleData.url } target='_blank' rel='noreferrer'><p>Click here to view the full article</p></a>
+        <a href={ articleData.url } target='_blank' rel='noreferrer' data-cy='article-link'><p>Click here to view the full article</p></a>
         <Link to='/'>
-          <button className='home-button'>Back to Top Stories</button>
+          <button className='home-button' data-cy='home-button'>Back to Top Stories</button>
         </Link>
       </div>
     </section>
