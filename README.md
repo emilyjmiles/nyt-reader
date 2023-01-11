@@ -76,7 +76,7 @@ You can find the project [here](https://github.com/emilyjmiles/nyt-reader) and f
 
 <!-- USAGE EXAMPLES -->
 
-## Usage
+## Usage and Demo
 
 Demo video coming soon!
 
@@ -91,6 +91,9 @@ Future Iterations:
 ## Testing
 
 Utilized testing to create a smooth user experience using [Cypress](https://www.cypress.io/).
+
+- [ ] Lighthouse and WAVE results
+- [ ] Cypress code coverage results
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
