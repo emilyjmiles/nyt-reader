@@ -14,17 +14,18 @@ const ArticleCard = ({ id, image, title, date }) => {
   const formatDate = `${removeZeros[0]} ${months[parseInt(removeZeros[1] - 1)]} ${removeZeros[2]}`;
 
   return (
-    <Link to={ id } className='article-card'>
+    <Link to={ id } className='article-card' data-cy='article-card'>
       <img
         src={ image.url }
         alt={ title }
         className='article-image'
+        data-cy='article-image'
         width={ image.width }
         height={ image.height }
       />
       <div className='article-snippet'>
-        <h2 className='title'>{ title }</h2>
-        <p>{ formatDate }</p>
+        <h2 className='title' data-cy='article-title'>{ title }</h2>
+        <p data-cy='article-date'>{ formatDate }</p>
       </div>
     </Link>
   );

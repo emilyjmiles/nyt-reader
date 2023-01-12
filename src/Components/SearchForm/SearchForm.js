@@ -23,12 +23,13 @@ const SearchForm = ({ articles, handleSearch, handleSort, searchValue, sortValue
 
   return (
     <section className='search-section'>
-      <form className='search-form'>
+      <form className='search-form' data-cy='search-form'>
         <div className='input-type sort-options'>
           <label>Search Articles by Section: </label>
           <select
             value={ !sortValue ? '' : sortValue }
             className='section-input'
+            data-cy='section-input'
             onChange={ handleSort }>
             { sortValue === null && <option
               value=''
@@ -45,12 +46,14 @@ const SearchForm = ({ articles, handleSearch, handleSort, searchValue, sortValue
             placeholder='article title'
             value={ searchValue }
             className='title-input'
+            data-cy='title-input'
             onChange={ handleSearch }
           />
         </div>
       </form>
       <button
         className='clear-button'
+        data-cy='clear-button'
         onClick={ (event) => clearInputs(event) }>
         Clear Search
       </button>

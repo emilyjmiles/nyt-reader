@@ -28,12 +28,18 @@ const ArticlesContainer = ({ articles, sortedArticles, searchResults }) => {
   };
 
   return (
-    <section className='articles-container'>
-      <div className='card-container'>
+    <section className='articles-container' data-cy='articles-container'>
+      <div className='card-container' data-cy='card-container'>
         { displayAllArticles && getArticleCards(articles) }
         { displaySearchResults && getArticleCards(searchResults) }
         { sortedArticles.length > 0 && getArticleCards(sortedArticles) }
-        { noResultsFound && <h1 className='search'>No results found. Please try your search again.</h1> }
+        { noResultsFound &&
+          <h1
+            className='search-no-results'
+            data-cy='search-no-results'>
+            No results found. Please try using a different search term.
+          </h1>
+        }
       </div>
     </section>
   );
